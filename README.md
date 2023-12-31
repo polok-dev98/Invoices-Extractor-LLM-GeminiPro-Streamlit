@@ -22,7 +22,7 @@ The `input_image_setup` function handles the preparation of uploaded images for 
 1. Clone the repository:
 
     ```bash
-    https://github.com/polok-dev98/Invoices-Extractor-LLM-GeminiPro-Streamlit.git
+    git clone https://github.com/polok-dev98/Invoices-Extractor-LLM-GeminiPro-Streamlit.git
     cd your_project
     ```
 
