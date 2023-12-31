@@ -1,65 +1,41 @@
-# Project Title
 
-Short description or overview of the project.
+## Code Description
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+The code in this repository comprises a Streamlit-based application that integrates Google's Generative AI service, specifically utilizing the `gemini-pro-vision` model provided by the `google.generativeai` library. The project is about to invoices extractor app. you can upload a image and make query, the app able to ans your query.
 
-## Table of Contents
+### Components:
 
-- [About](#about)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+- **`app.py`**: The main application file containing the Streamlit app setup. It allows users to input textual prompts and upload images. Upon submission, the application interfaces with Google's Generative AI to generate a response based on the provided prompt and image.
 
-## About
+- **`requirements.txt`**: Lists all the necessary Python packages required to run the application. Use `pip install -r requirements.txt` to install dependencies.
 
-A brief introduction to the project, its purpose, and why it's useful. Include any necessary background information.
+- **`.env.example`**: An example file illustrating the environment variable setup. Create a `.env` file with your Google API key for proper configuration.
 
-## Features
+### Functionality:
 
-Highlight the key features or functionalities of the project:
+The `get_gemini_response` function serves as the interface with Google's Generative AI. It takes input text, an image, and a prompt to generate a response by utilizing the `gemini-pro-vision` model.
 
-- Feature 1
-- Feature 2
-- Feature 3
+The `input_image_setup` function handles the preparation of uploaded images for processing, converting them into a suitable format for the Generative AI service.
 
-## Installation
+### Usage:
 
 1. Clone the repository:
 
     ```bash
     git clone https://github.com/your_username/your_project.git
-    ```
-
-2. Navigate to the project directory:
-
-    ```bash
     cd your_project
     ```
 
-3. Install dependencies:
+2. Install dependencies:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-    Optional: Instructions for setting up specific configurations or environments.
+    Make sure to configure your environment variables by creating a `.env` file with your Google API key.
 
-## Usage
+3. Run the application:
 
-Provide examples or instructions on how to use your project. Code snippets, screenshots, or command examples can be useful.
-
-## Contributing
-
-If you'd like to contribute to this project, please follow these guidelines...
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-Mention any acknowledgments or references. This can include credits to contributors, libraries, or resources used.
+    ```bash
+    streamlit run app.py
+    ```
