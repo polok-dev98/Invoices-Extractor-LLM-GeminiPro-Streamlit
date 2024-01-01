@@ -13,16 +13,15 @@ The code in this repository comprises a Streamlit-based application that integra
 
 ### Functionality:
 
-The `get_gemini_response` function serves as the interface with Google's Generative AI. It takes input text, an image, and a prompt to generate a response by utilizing the `gemini-pro-vision` model.
+The `get_gemini_response` function serves as the interface with Google's Generative AI. It takes input text, to generate a response by utilizing the `gemini-pro` model.
 
-The `input_image_setup` function handles the preparation of uploaded images for processing, converting them into a suitable format for the Generative AI service.
 
 ### Usage:
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/polok-dev98/Invoices-Extractor-LLM-GeminiPro-Streamlit.git
+    git clone https://github.com/polok-dev98/Gemini-LLM-QuestionAnswering-apps-with-streamlit.git
     cd your_project
     ```
 
